@@ -37,7 +37,7 @@ class ViewController: UIViewController {
                     // receive message
                     if let json = JSON {
                         print("Received: ", json)
-                        self.receivedBodyLabel.text = (json as! NSDictionary)["message"] as? String
+                        self.receivedBodyLabel.text = (json as! NSDictionary)["content"] as? String
                     }
                     if let error = error {
                         print("Received: ", error)
