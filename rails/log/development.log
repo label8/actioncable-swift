@@ -1,0 +1,351 @@
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (28.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK(7864839756650184315, 0)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateChatMessages (20170904073343)
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE `chat_messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `content` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170904073343')[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-09-04 07:33:59', '2017-09-04 07:33:59')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK(7864839756650184315)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW CREATE TABLE `chat_messages`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'chat_messages'[0m
+Started GET "/" for 210.172.143.49 at 2017-09-04 07:46:22 +0000
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 210.172.143.49 at 2017-09-04 08:09:32 +0000
+  [1m[35m (4.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 210.172.143.49 at 2017-09-04 08:09:35 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 210.172.143.49 at 2017-09-04 08:09:36 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 210.172.143.49 at 2017-09-04 08:09:36 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 210.172.143.49 at 2017-09-04 08:21:39 +0000
+Started GET "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 08:21:39 +0000
+Request origin not allowed: ws://163.44.175.23:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 08:21:39 +0000
+Started GET "/cable" for 210.172.143.49 at 2017-09-04 08:23:31 +0000
+Started GET "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 08:23:31 +0000
+Request origin not allowed: ws://163.44.175.23:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 08:23:31 +0000
+Started GET "/cable" for 210.172.143.49 at 2017-09-04 08:25:09 +0000
+Started GET "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 08:25:09 +0000
+Request origin not allowed: ws://163.44.175.23:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 08:25:09 +0000
+Started GET "/cable" for 210.172.143.49 at 2017-09-04 08:30:40 +0000
+Started GET "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 08:30:40 +0000
+Request origin not allowed: ws://163.44.175.23:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 08:30:40 +0000
+Started GET "/cable" for 210.172.143.49 at 2017-09-04 08:32:53 +0000
+Started GET "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 08:32:53 +0000
+Request origin not allowed: ws://163.44.175.23:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 08:32:53 +0000
+Started GET "/cable" for 210.172.143.49 at 2017-09-04 08:55:40 +0000
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 08:55:40 +0000
+Request origin not allowed: ws://163.44.175.23:3000
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 08:55:40 +0000
+Started GET "/cable" for 210.172.143.49 at 2017-09-04 08:56:26 +0000
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 08:56:26 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat_channel
+Unable to process ChatChannel#speak({"message"=>"hello: 5"})
+Unable to process ChatChannel#speak({"message"=>"hello: 0"})
+Finished "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 08:58:24 +0000
+ChatChannel stopped streaming from chat_channel
+Started GET "/cable" for 210.172.143.49 at 2017-09-04 08:58:35 +0000
+Started GET "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 08:58:35 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat_channel
+ChatChannel#create({"message"=>"hello: 3"})
+Could not execute command from ({"command"=>"message", "data"=>"{\"action\":\"create\",\"message\":\"hello: 3\"}", "identifier"=>"{\"channel\":\"ChatChannel\"}"}) [KeyError - key not found: "content"]: /myapp/app/channels/chat_channel.rb:11:in `fetch' | /myapp/app/channels/chat_channel.rb:11:in `create' | /usr/local/bundle/gems/actioncable-5.1.1/lib/action_cable/channel/base.rb:262:in `public_send' | /usr/local/bundle/gems/actioncable-5.1.1/lib/action_cable/channel/base.rb:262:in `dispatch_action' | /usr/local/bundle/gems/actioncable-5.1.1/lib/action_cable/channel/base.rb:166:in `block in perform_action'
+ChatChannel#create({"message"=>"hello: 1"})
+Could not execute command from ({"command"=>"message", "data"=>"{\"action\":\"create\",\"message\":\"hello: 1\"}", "identifier"=>"{\"channel\":\"ChatChannel\"}"}) [KeyError - key not found: "content"]: /myapp/app/channels/chat_channel.rb:11:in `fetch' | /myapp/app/channels/chat_channel.rb:11:in `create' | /usr/local/bundle/gems/actioncable-5.1.1/lib/action_cable/channel/base.rb:262:in `public_send' | /usr/local/bundle/gems/actioncable-5.1.1/lib/action_cable/channel/base.rb:262:in `dispatch_action' | /usr/local/bundle/gems/actioncable-5.1.1/lib/action_cable/channel/base.rb:166:in `block in perform_action'
+Finished "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 09:19:03 +0000
+ChatChannel stopped streaming from chat_channel
+Started GET "/cable" for 210.172.143.49 at 2017-09-04 09:19:25 +0000
+Started GET "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 09:19:25 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat_channel
+ChatChannel#create({"content"=>"hello: 1"})
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO `chat_messages` (`content`, `created_at`, `updated_at`) VALUES ('hello: 1', '2017-09-04 09:19:44', '2017-09-04 09:19:44')[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued ChatMessageCreationEventBroadcastJob (Job ID: 002c763f-7646-4d39-b0e8-69f7a30cd6f1) to Async(default) with arguments: #<GlobalID:0x00000002d82708 @uri=#<URI::GID gid://myapp/ChatMessage/1>>
+  [1m[36mChatMessage Load (2.0ms)[0m  [1m[34mSELECT  `chat_messages`.* FROM `chat_messages` WHERE `chat_messages`.`id` = 1 LIMIT 1[0m
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [002c763f-7646-4d39-b0e8-69f7a30cd6f1] Performing ChatMessageCreationEventBroadcastJob (Job ID: 002c763f-7646-4d39-b0e8-69f7a30cd6f1) from Async(default) with arguments: #<GlobalID:0x00000002c9a480 @uri=#<URI::GID gid://myapp/ChatMessage/1>>
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [002c763f-7646-4d39-b0e8-69f7a30cd6f1] Error performing ChatMessageCreationEventBroadcastJob (Job ID: 002c763f-7646-4d39-b0e8-69f7a30cd6f1) from Async(default) in 4.29ms: NoMethodError (undefined method `create_at' for #<ChatMessage:0x00000002cd8848>):
+/usr/local/bundle/gems/activemodel-5.1.1/lib/active_model/attribute_methods.rb:432:in `method_missing'
+/myapp/app/jobs/chat_message_creation_event_broadcast_job.rb:5:in `perform'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/execution.rb:37:in `block in perform_now'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:108:in `block in run_callbacks'
+/usr/local/bundle/gems/i18n-0.8.6/lib/i18n.rb:257:in `with_locale'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/translation.rb:7:in `block (2 levels) in <module:Translation>'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `instance_exec'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/logging.rb:24:in `block (4 levels) in <module:Logging>'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/notifications.rb:166:in `block in instrument'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/notifications.rb:166:in `instrument'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/logging.rb:23:in `block (3 levels) in <module:Logging>'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/logging.rb:44:in `block in tag_logger'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/tagged_logging.rb:69:in `tagged'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/logging.rb:44:in `tag_logger'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/logging.rb:20:in `block (2 levels) in <module:Logging>'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `instance_exec'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:135:in `run_callbacks'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/execution.rb:33:in `perform_now'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/execution.rb:22:in `block in execute'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:108:in `block in run_callbacks'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/railtie.rb:26:in `block (4 levels) in <class:Railtie>'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/execution_wrapper.rb:85:in `wrap'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/reloader.rb:68:in `block in wrap'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/execution_wrapper.rb:85:in `wrap'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/reloader.rb:67:in `wrap'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/railtie.rb:25:in `block (3 levels) in <class:Railtie>'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `instance_exec'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:135:in `run_callbacks'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/execution.rb:20:in `execute'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/queue_adapters/async_adapter.rb:68:in `perform'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:348:in `run_task'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:337:in `block (3 levels) in create_worker'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:320:in `loop'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:320:in `block (2 levels) in create_worker'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:319:in `catch'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:319:in `block in create_worker'
+Started GET "/cable" for 210.172.143.49 at 2017-09-04 09:21:49 +0000
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 09:21:50 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat_channel
+ChatChannel#create({"content"=>"hello: 6"})
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `chat_messages` (`content`, `created_at`, `updated_at`) VALUES ('hello: 6', '2017-09-04 09:22:32', '2017-09-04 09:22:32')[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued ChatMessageCreationEventBroadcastJob (Job ID: ba981bd9-1e72-45c8-bde3-d1a6067ccb9c) to Async(default) with arguments: #<GlobalID:0x00000003621238 @uri=#<URI::GID gid://myapp/ChatMessage/2>>
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mChatMessage Load (0.4ms)[0m  [1m[34mSELECT  `chat_messages`.* FROM `chat_messages` WHERE `chat_messages`.`id` = 2 LIMIT 1[0m
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [ba981bd9-1e72-45c8-bde3-d1a6067ccb9c] Performing ChatMessageCreationEventBroadcastJob (Job ID: ba981bd9-1e72-45c8-bde3-d1a6067ccb9c) from Async(default) with arguments: #<GlobalID:0x00000002b42b50 @uri=#<URI::GID gid://myapp/ChatMessage/2>>
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [ba981bd9-1e72-45c8-bde3-d1a6067ccb9c] Error performing ChatMessageCreationEventBroadcastJob (Job ID: ba981bd9-1e72-45c8-bde3-d1a6067ccb9c) from Async(default) in 7.6ms: NoMethodError (undefined method `create_at' for #<ChatMessage:0x00000002f54dd8>):
+/usr/local/bundle/gems/activemodel-5.1.1/lib/active_model/attribute_methods.rb:432:in `method_missing'
+/myapp/app/jobs/chat_message_creation_event_broadcast_job.rb:5:in `perform'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/execution.rb:37:in `block in perform_now'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:108:in `block in run_callbacks'
+/usr/local/bundle/gems/i18n-0.8.6/lib/i18n.rb:257:in `with_locale'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/translation.rb:7:in `block (2 levels) in <module:Translation>'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `instance_exec'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/logging.rb:24:in `block (4 levels) in <module:Logging>'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/notifications.rb:166:in `block in instrument'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/notifications.rb:166:in `instrument'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/logging.rb:23:in `block (3 levels) in <module:Logging>'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/logging.rb:44:in `block in tag_logger'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/tagged_logging.rb:69:in `tagged'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/logging.rb:44:in `tag_logger'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/logging.rb:20:in `block (2 levels) in <module:Logging>'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `instance_exec'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:135:in `run_callbacks'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/execution.rb:33:in `perform_now'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/execution.rb:22:in `block in execute'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:108:in `block in run_callbacks'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/railtie.rb:26:in `block (4 levels) in <class:Railtie>'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/execution_wrapper.rb:85:in `wrap'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/reloader.rb:68:in `block in wrap'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/execution_wrapper.rb:85:in `wrap'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/reloader.rb:67:in `wrap'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/railtie.rb:25:in `block (3 levels) in <class:Railtie>'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `instance_exec'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:135:in `run_callbacks'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/execution.rb:20:in `execute'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/queue_adapters/async_adapter.rb:68:in `perform'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:348:in `run_task'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:337:in `block (3 levels) in create_worker'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:320:in `loop'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:320:in `block (2 levels) in create_worker'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:319:in `catch'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:319:in `block in create_worker'
+Finished "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 09:22:53 +0000
+ChatChannel stopped streaming from chat_channel
+Started GET "/cable" for 210.172.143.49 at 2017-09-04 09:23:00 +0000
+Started GET "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 09:23:00 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat_channel
+ChatChannel#create({"content"=>"hello: 9"})
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `chat_messages` (`content`, `created_at`, `updated_at`) VALUES ('hello: 9', '2017-09-04 09:23:18', '2017-09-04 09:23:18')[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued ChatMessageCreationEventBroadcastJob (Job ID: 4b9c6934-4cf3-417d-8ef8-58cb6a687c6a) to Async(default) with arguments: #<GlobalID:0x007f319071f2a0 @uri=#<URI::GID gid://myapp/ChatMessage/3>>
+  [1m[36mChatMessage Load (0.4ms)[0m  [1m[34mSELECT  `chat_messages`.* FROM `chat_messages` WHERE `chat_messages`.`id` = 3 LIMIT 1[0m
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [4b9c6934-4cf3-417d-8ef8-58cb6a687c6a] Performing ChatMessageCreationEventBroadcastJob (Job ID: 4b9c6934-4cf3-417d-8ef8-58cb6a687c6a) from Async(default) with arguments: #<GlobalID:0x007f3190712ed8 @uri=#<URI::GID gid://myapp/ChatMessage/3>>
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [4b9c6934-4cf3-417d-8ef8-58cb6a687c6a] Error performing ChatMessageCreationEventBroadcastJob (Job ID: 4b9c6934-4cf3-417d-8ef8-58cb6a687c6a) from Async(default) in 0.53ms: NoMethodError (undefined method `create_at' for #<ChatMessage:0x007f31907183b0>):
+/usr/local/bundle/gems/activemodel-5.1.1/lib/active_model/attribute_methods.rb:432:in `method_missing'
+/myapp/app/jobs/chat_message_creation_event_broadcast_job.rb:5:in `perform'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/execution.rb:37:in `block in perform_now'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:108:in `block in run_callbacks'
+/usr/local/bundle/gems/i18n-0.8.6/lib/i18n.rb:257:in `with_locale'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/translation.rb:7:in `block (2 levels) in <module:Translation>'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `instance_exec'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/logging.rb:24:in `block (4 levels) in <module:Logging>'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/notifications.rb:166:in `block in instrument'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/notifications.rb:166:in `instrument'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/logging.rb:23:in `block (3 levels) in <module:Logging>'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/logging.rb:44:in `block in tag_logger'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/tagged_logging.rb:69:in `block in tagged'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/tagged_logging.rb:69:in `tagged'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/logging.rb:44:in `tag_logger'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/logging.rb:20:in `block (2 levels) in <module:Logging>'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `instance_exec'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:135:in `run_callbacks'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/execution.rb:33:in `perform_now'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/execution.rb:22:in `block in execute'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:108:in `block in run_callbacks'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/railtie.rb:26:in `block (4 levels) in <class:Railtie>'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/execution_wrapper.rb:85:in `wrap'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/reloader.rb:68:in `block in wrap'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/execution_wrapper.rb:85:in `wrap'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/reloader.rb:67:in `wrap'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/railtie.rb:25:in `block (3 levels) in <class:Railtie>'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `instance_exec'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+/usr/local/bundle/gems/activesupport-5.1.1/lib/active_support/callbacks.rb:135:in `run_callbacks'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/execution.rb:20:in `execute'
+/usr/local/bundle/gems/activejob-5.1.1/lib/active_job/queue_adapters/async_adapter.rb:68:in `perform'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:348:in `run_task'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:337:in `block (3 levels) in create_worker'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:320:in `loop'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:320:in `block (2 levels) in create_worker'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:319:in `catch'
+/usr/local/bundle/gems/concurrent-ruby-1.0.5/lib/concurrent/executor/ruby_thread_pool_executor.rb:319:in `block in create_worker'
+Started GET "/cable" for 210.172.143.49 at 2017-09-04 09:24:27 +0000
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/cable/" [WebSocket] for 210.172.143.49 at 2017-09-04 09:24:28 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat_channel
+ChatChannel#create({"content"=>"hello: 4"})
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `chat_messages` (`content`, `created_at`, `updated_at`) VALUES ('hello: 4', '2017-09-04 09:24:42', '2017-09-04 09:24:42')[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued ChatMessageCreationEventBroadcastJob (Job ID: 720d4cae-b6e5-46fa-9655-e0216b8be59d) to Async(default) with arguments: #<GlobalID:0x0000000392beb0 @uri=#<URI::GID gid://myapp/ChatMessage/4>>
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mChatMessage Load (0.3ms)[0m  [1m[34mSELECT  `chat_messages`.* FROM `chat_messages` WHERE `chat_messages`.`id` = 4 LIMIT 1[0m
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [720d4cae-b6e5-46fa-9655-e0216b8be59d] Performing ChatMessageCreationEventBroadcastJob (Job ID: 720d4cae-b6e5-46fa-9655-e0216b8be59d) from Async(default) with arguments: #<GlobalID:0x0000000339f4b0 @uri=#<URI::GID gid://myapp/ChatMessage/4>>
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [720d4cae-b6e5-46fa-9655-e0216b8be59d] [ActionCable] Broadcasting to chat_channel: {:id=>4, :created_at=>"09:24", :content=>"hello: 4"}
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [720d4cae-b6e5-46fa-9655-e0216b8be59d] Performed ChatMessageCreationEventBroadcastJob (Job ID: 720d4cae-b6e5-46fa-9655-e0216b8be59d) from Async(default) in 4.69ms
+ChatChannel transmitting {"id"=>4, "created_at"=>"09:24", "content"=>"hello: 4"} (via streamed from chat_channel)
+ChatChannel#create({"content"=>"hello: 2"})
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `chat_messages` (`content`, `created_at`, `updated_at`) VALUES ('hello: 2', '2017-09-04 09:25:19', '2017-09-04 09:25:19')[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued ChatMessageCreationEventBroadcastJob (Job ID: 6b10f09f-b7c9-45e3-9fc5-cd9844c69b37) to Async(default) with arguments: #<GlobalID:0x007f0f607f4a88 @uri=#<URI::GID gid://myapp/ChatMessage/5>>
+  [1m[36mChatMessage Load (0.5ms)[0m  [1m[34mSELECT  `chat_messages`.* FROM `chat_messages` WHERE `chat_messages`.`id` = 5 LIMIT 1[0m
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [6b10f09f-b7c9-45e3-9fc5-cd9844c69b37] Performing ChatMessageCreationEventBroadcastJob (Job ID: 6b10f09f-b7c9-45e3-9fc5-cd9844c69b37) from Async(default) with arguments: #<GlobalID:0x007f0f607dd540 @uri=#<URI::GID gid://myapp/ChatMessage/5>>
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [6b10f09f-b7c9-45e3-9fc5-cd9844c69b37] [ActionCable] Broadcasting to chat_channel: {:id=>5, :created_at=>"09:25", :content=>"hello: 2"}
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [6b10f09f-b7c9-45e3-9fc5-cd9844c69b37] Performed ChatMessageCreationEventBroadcastJob (Job ID: 6b10f09f-b7c9-45e3-9fc5-cd9844c69b37) from Async(default) in 0.66ms
+ChatChannel transmitting {"id"=>5, "created_at"=>"09:25", "content"=>"hello: 2"} (via streamed from chat_channel)
+Started GET "/" for 210.172.143.49 at 2017-09-04 09:46:25 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 126.147.103.96 at 2017-09-04 14:25:36 +0000
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/cable/" [WebSocket] for 126.147.103.96 at 2017-09-04 14:25:36 +0000
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatChannel is transmitting the subscription confirmation
+ChatChannel is streaming from chat_channel
+ChatChannel#create({"content"=>"hello: 6"})
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `chat_messages` (`content`, `created_at`, `updated_at`) VALUES ('hello: 6', '2017-09-04 14:26:02', '2017-09-04 14:26:02')[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued ChatMessageCreationEventBroadcastJob (Job ID: 855d878d-3443-412f-a4c1-d6a578a29972) to Async(default) with arguments: #<GlobalID:0x007fe260197068 @uri=#<URI::GID gid://myapp/ChatMessage/6>>
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mChatMessage Load (0.3ms)[0m  [1m[34mSELECT  `chat_messages`.* FROM `chat_messages` WHERE `chat_messages`.`id` = 6 LIMIT 1[0m
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [855d878d-3443-412f-a4c1-d6a578a29972] Performing ChatMessageCreationEventBroadcastJob (Job ID: 855d878d-3443-412f-a4c1-d6a578a29972) from Async(default) with arguments: #<GlobalID:0x0000000379fab0 @uri=#<URI::GID gid://myapp/ChatMessage/6>>
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [855d878d-3443-412f-a4c1-d6a578a29972] [ActionCable] Broadcasting to chat_channel: {:id=>6, :created_at=>"14:26", :content=>"hello: 6"}
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [855d878d-3443-412f-a4c1-d6a578a29972] Performed ChatMessageCreationEventBroadcastJob (Job ID: 855d878d-3443-412f-a4c1-d6a578a29972) from Async(default) in 3.27ms
+ChatChannel transmitting {"id"=>6, "created_at"=>"14:26", "content"=>"hello: 6"} (via streamed from chat_channel)
+ChatChannel#create({"content"=>"hello: 7"})
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `chat_messages` (`content`, `created_at`, `updated_at`) VALUES ('hello: 7', '2017-09-04 14:26:38', '2017-09-04 14:26:38')[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued ChatMessageCreationEventBroadcastJob (Job ID: 6b15d6f0-ec22-46b1-a777-a31c382f054e) to Async(default) with arguments: #<GlobalID:0x007fe2601b03d8 @uri=#<URI::GID gid://myapp/ChatMessage/7>>
+  [1m[36mChatMessage Load (0.6ms)[0m  [1m[34mSELECT  `chat_messages`.* FROM `chat_messages` WHERE `chat_messages`.`id` = 7 LIMIT 1[0m
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [6b15d6f0-ec22-46b1-a777-a31c382f054e] Performing ChatMessageCreationEventBroadcastJob (Job ID: 6b15d6f0-ec22-46b1-a777-a31c382f054e) from Async(default) with arguments: #<GlobalID:0x00000003724680 @uri=#<URI::GID gid://myapp/ChatMessage/7>>
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [6b15d6f0-ec22-46b1-a777-a31c382f054e] [ActionCable] Broadcasting to chat_channel: {:id=>7, :created_at=>"14:26", :content=>"hello: 7"}
+[ActiveJob] [ChatMessageCreationEventBroadcastJob] [6b15d6f0-ec22-46b1-a777-a31c382f054e] Performed ChatMessageCreationEventBroadcastJob (Job ID: 6b15d6f0-ec22-46b1-a777-a31c382f054e) from Async(default) in 0.72ms
+ChatChannel transmitting {"id"=>7, "created_at"=>"14:26", "content"=>"hello: 7"} (via streamed from chat_channel)
+Finished "/cable/" [WebSocket] for 126.147.103.96 at 2017-09-04 15:18:37 +0000
+ChatChannel stopped streaming from chat_channel
